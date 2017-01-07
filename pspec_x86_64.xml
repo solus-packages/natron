@@ -1,0 +1,39 @@
+<PISI>
+    <Source>
+        <Name>natron</Name>
+        <Homepage>http://www.natron.fr</Homepage>
+        <Packager>
+            <Name>Sönke Behrendt</Name>
+            <Email>thesoenke@outlook.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <PartOf>multimedia.video</PartOf>
+        <Summary xml:lang="en">Open-source Node-graph based compositing software</Summary>
+        <Description xml:lang="en">Open-source compositing software. Node-graph based. Similar in functionalities to Adobe After Effects and Nuke by The Foundry.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>natron</Name>
+        <Summary xml:lang="en">Open-source Node-graph based compositing software</Summary>
+        <Description xml:lang="en">Open-source compositing software. Node-graph based. Similar in functionalities to Adobe After Effects and Nuke by The Foundry.
+</Description>
+        <PartOf>multimedia.video</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/applications/Natron.desktop</Path>
+            <Path fileType="data">/usr/share/mime/packages/x-natron.xml</Path>
+            <Path fileType="data">/usr/share/pixmaps/natronIcon256_linux.png</Path>
+            <Path fileType="data">/usr/share/pixmaps/natronProjectIcon_linux.png</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-01-07</Date>
+            <Version>2.1.9</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Sönke Behrendt</Name>
+            <Email>thesoenke@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>

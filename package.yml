@@ -1,0 +1,39 @@
+name       : natron
+version    : 2.1.9
+release    : 1
+source     :
+    - https://github.com/MrKepzie/Natron/releases/download/2.1.9/Natron-2.1.9.tar.xz : 574207137b75901ef2b2ce19042a1362e7a7e670cae80f338552f098f107acf1
+license    : GPL-2.0
+homepage   : http://www.natron.fr
+component  : multimedia.video
+summary    : Open-source Node-graph based compositing software
+description: |
+    Open-source compositing software. Node-graph based. Similar in functionalities to Adobe After Effects and Nuke by The Foundry.
+builddeps  :
+    - pkgconfig(cairo)
+    - pkgconfig(pyside)
+    - pkgconfig(QtCore)
+    - pkgconfig(shiboken)
+    - libboost-devel
+rundeps    :
+    - openfx-arena
+    - openfx-io
+    - openfx-misc
+setup      : |
+    %patch -p1 < $pkgfiles/change-default-plugin-directory.patch
+    cp $pkgfiles/config.pri $workdir/config.pri
+    sed -i 's/libcairo.a/libcairo.so/g' global.pri
+    sed -i '1s/^/QMAKE_CXXFLAGS += -std=c++98\n/' Gui/Gui.pro
+    sed -i '1s/^/QMAKE_CXXFLAGS += -std=c++98\n/' Engine/Engine.pro
+    sed -i '1s/^/QMAKE_CXXFLAGS += -std=c++98\n/' Tests/Tests.pro
+
+    qmake-qt4 -r \
+        QMAKE_MOC=/usr/bin/moc-qt4 \
+        QMAKE_RCC=/usr/bin/rcc-qt4 \
+        QMAKE_CXXFLAGS="$CXXFLAGS" \
+        PREFIX=$installdir/usr \
+        CONFIG+=release
+build      : |
+    %make
+install    : |
+    %make_install
