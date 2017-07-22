@@ -3,8 +3,8 @@
         <Name>natron</Name>
         <Homepage>http://www.natron.fr</Homepage>
         <Packager>
-            <Name>Sönke Behrendt</Name>
-            <Email>thesoenke@outlook.com</Email>
+            <Name>Peter O&apos;Connor</Name>
+            <Email>peter@solus-project.com</Email>
         </Packager>
         <License>GPL-2.0</License>
         <PartOf>multimedia.video</PartOf>
@@ -21,6 +21,199 @@
         <PartOf>multimedia.video</PartOf>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/config.ocio</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/AdobeRGB_to_linear.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/aces_to_xyz.spimtx</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/adx_adx10_to_cdd.spimtx</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/adx_cdd_to_cid.spimtx</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/adx_cid_to_rle.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/adx_exp_to_aces.spimtx</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/alexalogc.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/cineon.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/clog.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/colorworks_filmlg_to_p3.3dl</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/dci_xyz.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_advantix_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_advantix_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_advantix_400.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfachrome_ct_precisa_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfachrome_ct_precisa_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfachrome_rsx2_050.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfachrome_rsx2_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfachrome_rsx2_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_futura_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_futura_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_futura_400.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_futura_ii_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_futura_ii_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_futura_ii_400.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_hdc_100_plus.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_hdc_200_plus.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_hdc_400_plus.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_optima_ii_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_optima_ii_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_ultra_050.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_vista_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_vista_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_vista_400.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/agfa_agfacolor_vista_800.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/canon_optura_981111.slrr.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/canon_optura_981111.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/canon_optura_981113.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/canon_optura_981114.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/eastman_double_x_neg_12min.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/eastman_double_x_neg_4min.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/eastman_double_x_neg_5min.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/eastman_double_x_neg_6min.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/fujifilm_f-125.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/fujifilm_f-250.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/fujifilm_f-400.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/fujifilm_fci.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/fujifilm_fp2900z.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_dscs_3151.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_dscs_3152.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_dscs_3153.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_dscs_3154.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_dscs_3155.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_dscs_3156.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_ektachrome_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_ektachrome_100_plus.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_ektachrome_320t.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_ektachrome_400x.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_ektachrome_64.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_ektachrome_64t.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_ektachrome_e100s.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_gold_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_gold_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_kaf-2001.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_kaf-3000.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_kai-0311.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_kai-0372.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_kai-1010.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_kodachrome_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_kodachrome_25.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_kodachrome_64.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_max_zoom_800.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_portra_100t.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_portra_160nc.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_portra_160vc.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_portra_400nc.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_portra_400vc.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/film_response/kodak_portra_800.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/lg10.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/lgf.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/panalog.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/ploglin.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/protune.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/rec709.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/rec709_to_aces.spimtx</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/redlog.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/rrt_ut33_dcdm.spi3d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/rrt_ut33_p3dci.spi3d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/rrt_ut33_rec709.spi3d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/rrt_ut33_sRGB.spi3d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/sRGB_to_linear.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/slog.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/slog1.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/slog2.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/slog3.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/spi_ocio_srgb_test.spi3d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/srgb.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/srgb_to_xyz.spimtx</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/vd16.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/viperlog.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/config.ocio</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/AdobeRGB_to_linear.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/CineonLog_to_linear.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/JPLog_to_linear.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_advantix_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_advantix_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_advantix_400.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfachrome_ct_precisa_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfachrome_ct_precisa_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfachrome_rsx2_050.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfachrome_rsx2_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfachrome_rsx2_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_futura_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_futura_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_futura_400.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_futura_ii_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_futura_ii_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_futura_ii_400.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_hdc_100_plus.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_hdc_200_plus.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_hdc_400_plus.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_optima_ii_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_optima_ii_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_ultra_050.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_vista_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_vista_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_vista_400.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/agfa_agfacolor_vista_800.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/canon_optura_981111.slrr.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/canon_optura_981111.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/canon_optura_981113.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/canon_optura_981114.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/eastman_double_x_neg_12min.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/eastman_double_x_neg_4min.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/eastman_double_x_neg_5min.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/eastman_double_x_neg_6min.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/fujifilm_f-125.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/fujifilm_f-250.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/fujifilm_f-400.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/fujifilm_fci.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/fujifilm_fp2900z.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_dscs_3151.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_dscs_3152.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_dscs_3153.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_dscs_3154.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_dscs_3155.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_dscs_3156.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_ektachrome_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_ektachrome_100_plus.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_ektachrome_320t.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_ektachrome_400x.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_ektachrome_64.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_ektachrome_64t.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_ektachrome_e100s.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_gold_100.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_gold_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_kaf-2001.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_kaf-3000.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_kai-0311.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_kai-0372.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_kai-1010.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_kodachrome_200.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_kodachrome_25.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_kodachrome_64.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_max_zoom_800.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_portra_100t.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_portra_160nc.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_portra_160vc.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_portra_400nc.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_portra_400vc.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/film_response/kodak_portra_800.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/rec1886_to_linear.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/rec2020_to_linear.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/rec709_to_linear.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/sRGB_to_linear.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/config.ocio</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/alexalogc.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/cineon.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/clog.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/panalog.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/ploglin.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/protune.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/rec709.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/redlog.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/slog.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/slog1.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/slog2.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/slog3.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/srgb.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/srgbf.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/luts/viperlog.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/nuke-default/make.py</Path>
             <Path fileType="data">/usr/share/applications/Natron.desktop</Path>
             <Path fileType="data">/usr/share/mime/packages/x-natron.xml</Path>
             <Path fileType="data">/usr/share/pixmaps/natronIcon256_linux.png</Path>
@@ -28,12 +221,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2017-01-07</Date>
-            <Version>2.1.9</Version>
+        <Update release="2">
+            <Date>2017-07-22</Date>
+            <Version>2.3.0</Version>
             <Comment>Packaging update</Comment>
-            <Name>Sönke Behrendt</Name>
-            <Email>thesoenke@outlook.com</Email>
+            <Name>Peter O&apos;Connor</Name>
+            <Email>peter@solus-project.com</Email>
         </Update>
     </History>
 </PISI>

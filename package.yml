@@ -1,8 +1,9 @@
 name       : natron
-version    : 2.1.9
-release    : 1
+version    : 2.3.0
+release    : 2
 source     :
-    - https://github.com/MrKepzie/Natron/releases/download/2.1.9/Natron-2.1.9.tar.xz : 574207137b75901ef2b2ce19042a1362e7a7e670cae80f338552f098f107acf1
+    - git|https://github.com/MrKepzie/Natron.git : 2.3.0
+    - https://github.com/MrKepzie/OpenColorIO-Configs/archive/Natron-v2.3.tar.gz : da489d2c943beeb84ded33c7ae5f3c5728675d4667b685cec812f1caa49391fd
 license    : GPL-2.0
 homepage   : http://www.natron.fr
 component  : multimedia.video
@@ -20,18 +21,16 @@ rundeps    :
     - openfx-io
     - openfx-misc
 setup      : |
-    %patch -p1 < $pkgfiles/change-default-plugin-directory.patch
+    %patch -p1 < $pkgfiles/0001-Use-usr-share-OFX-directory.patch
+    mkdir OpenColorIO-Configs
+    tar xf $sources/Natron-v*.tar.gz -C OpenColorIO-Configs --strip-components=1
     cp $pkgfiles/config.pri $workdir/config.pri
     sed -i 's/libcairo.a/libcairo.so/g' global.pri
     sed -i '1s/^/QMAKE_CXXFLAGS += -std=c++98\n/' Gui/Gui.pro
     sed -i '1s/^/QMAKE_CXXFLAGS += -std=c++98\n/' Engine/Engine.pro
     sed -i '1s/^/QMAKE_CXXFLAGS += -std=c++98\n/' Tests/Tests.pro
 
-    qmake-qt4 -r \
-        QMAKE_MOC=/usr/bin/moc-qt4 \
-        QMAKE_RCC=/usr/bin/rcc-qt4 \
-        QMAKE_CXXFLAGS="$CXXFLAGS" \
-        PREFIX=$installdir/usr \
+    %qmake4 PREFIX=$installdir/usr \
         CONFIG+=release
 build      : |
     %make
