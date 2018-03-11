@@ -3,7 +3,7 @@ libQtGui.so.4
 libQtNetwork.so.4
 libQtOpenGL.so.4
 libX11.so.6
-libboost_serialization.so.1.62.0
+libboost_serialization.so.1.65.1
 libc.so.6
 libcairo.so.2
 libdl.so.2

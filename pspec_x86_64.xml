@@ -1,10 +1,10 @@
 <PISI>
     <Source>
         <Name>natron</Name>
-        <Homepage>http://www.natron.fr</Homepage>
+        <Homepage>https://natron.fr/</Homepage>
         <Packager>
-            <Name>Peter O&apos;Connor</Name>
-            <Email>peter@solus-project.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
         <License>GPL-2.0</License>
         <PartOf>multimedia.video</PartOf>
@@ -22,6 +22,17 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/config.ocio</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/config.ocio.orig</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/config.ocio.patch</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/filmic/filmic_desat65cube.spi3d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/filmic/filmic_false_color.spi3d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/filmic/filmic_to_0-35_1-30.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/filmic/filmic_to_0-48_1-09.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/filmic/filmic_to_0-60_1-04.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/filmic/filmic_to_0-70_1-03.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/filmic/filmic_to_0-85_1-011.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/filmic/filmic_to_0.99_1-0075.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/filmic/filmic_to_1.20_1-00.spi1d</Path>
             <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/AdobeRGB_to_linear.spi1d</Path>
             <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/aces_to_xyz.spimtx</Path>
             <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/adx_adx10_to_cdd.spimtx</Path>
@@ -119,9 +130,11 @@
             <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/slog3.spi1d</Path>
             <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/spi_ocio_srgb_test.spi3d</Path>
             <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/srgb.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/srgb_inv.spi1d</Path>
             <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/srgb_to_xyz.spimtx</Path>
             <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/vd16.spi1d</Path>
             <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/viperlog.spi1d</Path>
+            <Path fileType="data">/usr/share/OpenColorIO-Configs/blender/luts/vlog.spi1d</Path>
             <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/config.ocio</Path>
             <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/AdobeRGB_to_linear.spi1d</Path>
             <Path fileType="data">/usr/share/OpenColorIO-Configs/natron/luts/CineonLog_to_linear.spi1d</Path>
@@ -221,12 +234,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
-            <Date>2017-07-22</Date>
-            <Version>2.3.0</Version>
+        <Update release="3">
+            <Date>2018-03-09</Date>
+            <Version>2.3.4</Version>
             <Comment>Packaging update</Comment>
-            <Name>Peter O&apos;Connor</Name>
-            <Email>peter@solus-project.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>

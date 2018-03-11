@@ -1,11 +1,11 @@
 name       : natron
-version    : 2.3.0
-release    : 2
+version    : 2.3.4
+release    : 3
 source     :
-    - git|https://github.com/MrKepzie/Natron.git : 2.3.0
-    - https://github.com/MrKepzie/OpenColorIO-Configs/archive/Natron-v2.3.tar.gz : da489d2c943beeb84ded33c7ae5f3c5728675d4667b685cec812f1caa49391fd
+    - git|https://github.com/MrKepzie/Natron.git : 2.3.4
+    - https://github.com/MrKepzie/OpenColorIO-Configs/archive/Natron-v2.3.tar.gz : 4009ba214bad46d8607daf1118eb77dc94f6fee43182d4228270c35fb161d115
 license    : GPL-2.0
-homepage   : http://www.natron.fr
+homepage   : https://natron.fr/
 component  : multimedia.video
 summary    : Open-source Node-graph based compositing software
 description: |
