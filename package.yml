@@ -1,10 +1,10 @@
 name       : natron
-version    : 2.3.4
-release    : 4
+version    : 2.3.11
+release    : 5
 source     :
-    - git|https://github.com/MrKepzie/Natron.git : 2.3.4
-    - https://github.com/MrKepzie/OpenColorIO-Configs/archive/Natron-v2.3.tar.gz : 4009ba214bad46d8607daf1118eb77dc94f6fee43182d4228270c35fb161d115
-license    : GPL-2.0
+    - git|https://github.com/NatronGitHub/Natron.git : 2.3.11
+    - https://github.com/NatronGitHub/OpenColorIO-Configs/archive/Natron-v3.0.tar.gz : 1d760f6a97fa0b44f69bdfe7d8e9949957fe4ccd1389b3059630094649ff249e
+license    : GPL-2.0-or-later
 homepage   : https://natron.fr/
 component  : multimedia.video
 summary    : Open-source Node-graph based compositing software
@@ -30,8 +30,7 @@ setup      : |
     sed -i '1s/^/QMAKE_CXXFLAGS += -std=c++98\n/' Engine/Engine.pro
     sed -i '1s/^/QMAKE_CXXFLAGS += -std=c++98\n/' Tests/Tests.pro
 
-    %qmake4 PREFIX=$installdir/usr \
-        CONFIG+=release
+    %qmake4 PREFIX=$installdir/usr CONFIG+=release
 build      : |
     %make
 install    : |
