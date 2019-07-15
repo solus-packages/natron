@@ -11,7 +11,7 @@
         <Summary xml:lang="en">Open-source Node-graph based compositing software</Summary>
         <Description xml:lang="en">Open-source compositing software. Node-graph based. Similar in functionalities to Adobe After Effects and Nuke by The Foundry.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>natron</Name>
@@ -238,9 +238,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="6">
-            <Date>2018-06-29</Date>
-            <Version>2.3.13</Version>
+        <Update release="7">
+            <Date>2019-07-15</Date>
+            <Version>2.3.14</Version>
             <Comment>Packaging update</Comment>
             <Name>Joey Riches</Name>
             <Email>josephriches@gmail.com</Email>

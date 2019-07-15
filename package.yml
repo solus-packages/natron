@@ -1,8 +1,8 @@
 name       : natron
-version    : 2.3.13
-release    : 6
+version    : 2.3.14
+release    : 7
 source     :
-    - git|https://github.com/NatronGitHub/Natron.git : 2.3.13
+    - git|https://github.com/NatronGitHub/Natron.git : 2.3.14
     - https://github.com/NatronGitHub/OpenColorIO-Configs/archive/Natron-v3.0.tar.gz : 1d760f6a97fa0b44f69bdfe7d8e9949957fe4ccd1389b3059630094649ff249e
 license    : GPL-2.0-or-later
 homepage   : https://natron.fr/
@@ -30,7 +30,7 @@ setup      : |
     sed -i '1s/^/QMAKE_CXXFLAGS += -std=c++98\n/' Engine/Engine.pro
     sed -i '1s/^/QMAKE_CXXFLAGS += -std=c++98\n/' Tests/Tests.pro
 
-    %qmake4 PREFIX=$installdir/usr CONFIG+=release
+    %qmake4 PREFIX=$installdir/usr CONFIG+=release CONFIG+=enforce-gcc8
 build      : |
     %make
 install    : |
